@@ -11,6 +11,7 @@ import { CapitulosComponent } from './pages/capitulos/capitulos.component';
 import { ActividadesComponent } from './pages/actividades/actividades.component';
 import { RetroalimentacionComponent } from './pages/retroalimentacion/retroalimentacion.component';
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
+import { ListaCapitulosComponent } from './pages/capitulos/lista-capitulos/lista-capitulos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AyudaComponent } from './pages/ayuda/ayuda.component';
     CapitulosComponent,
     ActividadesComponent,
     RetroalimentacionComponent,
-    AyudaComponent
+    AyudaComponent,
+    ListaCapitulosComponent
   ],
   imports: [
     BrowserModule,

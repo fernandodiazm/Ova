@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-capitulos',
-  templateUrl: './capitulos.component.html',
-  styleUrls: ['./capitulos.component.css']
+  templateUrl: './capitulos.component.html'
 })
 export class CapitulosComponent implements OnInit {
 

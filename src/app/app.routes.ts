@@ -1,14 +1,22 @@
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ChildrenOutletContexts } from '@angular/router';
+
 import { IntroduccionComponent } from './pages/introduccion/introduccion.component';
 import { CapitulosComponent } from './pages/capitulos/capitulos.component';
+import { ListaCapitulosComponent } from './pages/capitulos/lista-capitulos/lista-capitulos.component';
 import { ActividadesComponent } from './pages/actividades/actividades.component';
 import { RetroalimentacionComponent } from './pages/retroalimentacion/retroalimentacion.component';
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
 
 
+
 const appRoutes: Routes = [
     { path: 'introduccion',         component: IntroduccionComponent,       data: { breadcrumb: 'Introduccion' }},
-    { path: 'capitulos',            component: CapitulosComponent,          data: { breadcrumb: 'Capitulos' }},
+    { path: 'capitulos',            component: CapitulosComponent,          data: { breadcrumb: 'Capitulos' },
+        children: [
+            { path: '', component: ListaCapitulosComponent, data: { breadcrumb: 'Lista'} },
+            { path: 'lista', component: ListaCapitulosComponent, data: { breadcrumb: 'Lista'} }
+        ]
+    },
     { path: 'actividades',          component: ActividadesComponent,        data: { breadcrumb: 'Actividades' }},
     { path: 'retroalimentacion',    component: RetroalimentacionComponent,  data: { breadcrumb: 'Retroalimentacion' }},
     { path: 'ayuda',                component: AyudaComponent,              data: { breadcrumb: 'Ayuda' }},
@@ -16,4 +24,4 @@ const appRoutes: Routes = [
     { path: '**',                   component: IntroduccionComponent }
 ];
 
-export const APP_ROUTES = RouterModule.forRoot(appRoutes, {useHash: true});
+export const APP_ROUTES = RouterModule.forRoot(appRoutes, { useHash: true});
