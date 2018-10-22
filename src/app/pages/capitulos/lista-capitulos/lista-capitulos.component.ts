@@ -12,9 +12,9 @@ export class ListaCapitulosComponent implements OnInit {
 
   // tslint:disable-next-line:member-ordering
   targetas: Array<any> = [
-    { url: '', nombre: 'soy 1' },
-    { url: '', nombre: 'soy 2' },
-    { url: '', nombre: 'soy 3' }
+    { url: '', nombre: 'Terminos de multiplicacion' },
+    { url: '', nombre: 'Multiplicando por una cifra' },
+    { url: '', nombre: 'Multiplicando 2 cifras por 1' }
   ];
 
 }

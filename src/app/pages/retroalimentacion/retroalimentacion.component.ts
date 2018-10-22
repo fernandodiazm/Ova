@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./retroalimentacion.component.css']
 })
 export class RetroalimentacionComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
+  // tslint:disable-next-line:member-ordering
+  ejercicios: Array<any> = [
+    { url: '../../../assets/pdf/1 cifra.pdf', nombre: 'sdf' },
+    { url: '../../../assets/pdf/1 cifra.pdf' },
+    { url: '../../../assets/pdf/1 cifra.pdf' }
+  ];
 
 }

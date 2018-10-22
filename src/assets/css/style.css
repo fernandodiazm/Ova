@@ -2062,22 +2062,6 @@ Megamenu
   padding: 0px;
 }
 
-.mega-dropdown .nav-accordion .card {
-  margin-bottom: 1px;
-}
-
-.mega-dropdown .nav-accordion .card-header {
-  background: #ffffff;
-}
-
-.mega-dropdown .nav-accordion .card-header h5 {
-  margin: 0px;
-}
-
-.mega-dropdown .nav-accordion .card-header h5 a {
-  text-decoration: none;
-  color: #67757c;
-}
 
 /*******************
 Wave Effects

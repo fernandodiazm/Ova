@@ -1,3 +1,96 @@
-<p>
-  retroalimentacion works!
-</p>
+<div id="accordion" role="tablist">
+
+
+  <div class="media-body text-center">
+    <p style="font-size:20px; color: rgb(30, 39, 124)"> Ponemos a
+      su disposición nuestro repositorio digital
+      conformado por nuestra producción académica. </p>
+  </div>
+
+
+
+  <div class="card">
+
+    <div class="card-header bg-info" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a style="text-decoration: none; color:rgb(255, 255, 255)" class="collapsed" data-toggle="collapse" href="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Ejercicios de Terminos de la multiplicación
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+
+      <div class="card-body">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-sm-10 col-md-3 col-px-10" *ngFor="let ejercicio of ejercicios" style="text-align: center">
+
+              <a [href]="ejercicio.url" download="" style="align-items: center">
+                <img class="img-pdf" src="../../../assets/images/pdf.png" alt="pdf">
+                <p>{{ejercicio.nombre}}</p>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-header bg-info" role="tab" id="headingTwo">
+      <h5 class="mb-0">
+        <a style="text-decoration: none; color:rgb(255, 255, 255)" class="collapsed" data-toggle="collapse" href="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Ejercicios sobre multiplicación por una cifra
+        </a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+
+      <div class="card-body">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-sm-10 col-md-3 col-px-10" *ngFor="let ejercicio of ejercicios" style="text-align: center">
+
+              <a [href]="ejercicio.url" download="" style="align-items: center">
+                <img class="img-pdf" src="../../../assets/images/pdf.png" alt="pdf">
+                <p>{{ejercicio.nombre}}</p>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-header bg-info" role="tab" id="headingThree">
+      <h5 class="mb-0">
+        <a style="text-decoration: none; color:rgb(255, 255, 255)" class="collapsed" data-toggle="collapse" href="#collapseThree"
+          aria-expanded="false" aria-controls="collapseThree">
+          Ejercicios sobre multiplicación de dos cifra por una.
+        </a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+
+      <div class="card-body">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-sm-10 col-md-3 col-px-10" *ngFor="let ejercicio of ejercicios" style="text-align: center">
+
+              <a [href]="ejercicio.url" download="" style="align-items: center">
+                <img class="img-pdf" src="../../../assets/images/pdf.png" alt="pdf">
+                <p>{{ejercicio.nombre}}</p>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
