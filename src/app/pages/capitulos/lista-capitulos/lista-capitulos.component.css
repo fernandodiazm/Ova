@@ -3,7 +3,7 @@
 .cards {
   float: left;
   margin: 0%;
-  padding: 2%;
+  padding: 5%;
   width: 100%;
   cursor: pointer;
 }
